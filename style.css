@@ -1,94 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap');
+
 body {
   margin: 0;
   background: black;
   color: #00ffcc;
-  font-family: monospace;
+  font-family: 'Playfair Display', serif;
 }
+
 canvas {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 0;
-}
-.content {
-  position: relative;
-  z-index: 1;
-  padding: 2rem;
-  max-width: 900px;
-  margin: auto;
-}
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  text-align: center;
-  padding: 1rem;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 10;
-}
-.navbar a {
-  margin: 0 1rem;
-  color: #00ffff;
-  text-decoration: none;
-}
-.avatar {
-  width: 100px;
-  border-radius: 50%;
-  margin: 1rem 0;
-}
-.hero-title {
-  text-align: center;
-  font-size: 2.8rem;
-  color: #33ccff;
-}
-.subtitle {
-  text-align: center;
-  font-size: 1.1rem;
-  background: linear-gradient(to right, violet, #cc99ff);
-  -webkit-background-clip: text;
-  color: transparent;
-  margin-bottom: 2rem;
-}
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-}
-.card {
-  background: rgba(0, 255, 255, 0.1);
-  border: 1px solid #33ccff;
-  padding: 1rem;
-  border-radius: 10px;
-  text-align: center;
-}
-.star-image {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  clip-path: polygon(
-    50% 0%,
-    61% 35%,
-    98% 35%,
-    68% 57%,
-    79% 91%,
-    50% 70%,
-    21% 91%,
-    32% 57%,
-    2% 35%,
-    39% 35%
-  );
-  border: 2px solid #33ccff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px #00ffff;
-  transition: transform 0.3s ease;
-}
-.star-image:hover {
-  transform: scale(1.05);
-}
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap');
-
-.serif-text {
-  font-family: 'Playfair Display', serif;
 }
 
 .gradient-text {
@@ -97,42 +20,40 @@ canvas {
   -webkit-text-fill-color: transparent;
 }
 
-.oval-avatar {
-  width: 160px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 50% / 40%;
-  float: right;
-  margin-left: 2rem;
-  border: 3px solid #33ccff;
-  box-shadow: 0 0 10px #33ccff;
+.serif-text {
+  font-family: 'Playfair Display', serif;
 }
 
-.float-card-container {
+.content {
   position: relative;
-  min-height: 300px;
-  margin-top: 2rem;
-}
-
-.float-card {
-  width: 200px;
-  margin: 10px;
-  float: left;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid #33ccff;
-  border-radius: 15px;
-  padding: 1rem;
+  z-index: 1;
+  padding: 4rem 2rem;
+  max-width: 800px;
+  margin: auto;
   text-align: center;
-  transition: transform 0.3s;
 }
 
-.float-card:hover {
-  transform: scale(1.05);
+.resume-preview {
+  width: 100%;
+  max-width: 500px;
+  border: 3px solid #33ccff;
+  border-radius: 10px;
   box-shadow: 0 0 10px #33ccff;
 }
 
-.float-card img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 0.5rem;
+.download-btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #00ffff;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  border: none;
+  transition: background 0.3s;
+}
+
+.download-btn:hover {
+  background: #99ffff;
 }
