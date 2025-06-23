@@ -1,1 +1,0 @@
-console.log('Galaxy and meteor background active.');
