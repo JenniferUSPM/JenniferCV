@@ -1,1 +1,1 @@
-console.log('Galaxy & meteor animation here');
+console.log('Galaxy and meteor background active.');
