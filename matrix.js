@@ -123,3 +123,4 @@ window.addEventListener("resize", () => {
   canvas.height = window.innerHeight;
 });
 
+console.log('Galaxy and meteor background active.');
