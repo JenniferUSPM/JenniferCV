@@ -1,0 +1,62 @@
+import { useEffect } from "react";
+import Image from "next/image";
+
+export default function Resume() {
+  useEffect(() => {
+    document.title = "Jennifer | Resume";
+  }, []);
+
+  return (
+    <main className="min-h-screen bg-gradient-to-b from-black via-[#0e1a26] to-black text-lime-100 px-6 py-12 font-mono relative overflow-hidden">
+      <canvas id="canvas" className="fixed top-0 left-0 w-full h-full z-0 pointer-events-none opacity-40 animate-fadeIn" />
+
+      <section className="relative z-10 max-w-5xl mx-auto space-y-8">
+        <div className="flex flex-col items-center space-y-4">
+          <Image
+            src="/avatar.jpg"
+            alt="Jennifer C."
+            width={120}
+            height={120}
+            className="rounded-full border-4 border-lime-400 shadow-md"
+          />
+          <h1 className="text-4xl font-bold text-center text-lime-300 tracking-widest uppercase">Resume</h1>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl text-lime-300 font-semibold">Summary</h2>
+          <p>
+            Product Manager with 6 years of experience driving fintech and cross-border e-commerce products from 0 to 1.
+            Built scalable onboarding and compliance platforms at Ant Group (WorldFirst), supporting TikTok Shop, Amazon,
+            and Walmart.
+          </p>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl text-lime-300 font-semibold">Experience</h2>
+          <ul className="list-disc list-inside space-y-2">
+            <li><strong>Alipay International</strong> – Senior Product Manager (2024–Present)</li>
+            <li><strong>China UnionPay</strong> – Product Manager (2018–2024)</li>
+            <li><strong>Easylink Internship</strong> – Accountant (2014–2018)</li>
+          </ul>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl text-lime-300 font-semibold">Education</h2>
+          <p><strong>East Jiaotong University</strong> – Bachelor of Accounting, GPA: 3.75</p>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl text-lime-300 font-semibold">Skills</h2>
+          <ul className="list-disc list-inside space-y-1">
+            <li>Product Design: UX Optimization, API Integration, Agile/Scrum</li>
+            <li>AI & Automation: RPA, KYC, AI-based Fraud Detection, Autofill API</li>
+            <li>Data: SQL, Dashboards, A/B Testing, Cohort Analysis</li>
+            <li>Tools: Figma, JIRA, Confluence, Postman</li>
+            <li>Certifications: NVIDIA AI for All, LinkedIn Generative AI</li>
+            <li>Languages: Fluent in English and Chinese</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  );
+}
