@@ -1,41 +1,111 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Hi, I am JENNIFER</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background: black;
+      color: #00ffcc;
+      font-family: 'Playfair Display', serif;
+    }
+
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+
+    .gradient-text {
+      background: linear-gradient(to right, #00ffff, #99ccff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .oval-avatar {
+      width: 160px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50% / 40%;
+      float: right;
+      margin: 1rem 2rem;
+      border: 3px solid #33ccff;
+      box-shadow: 0 0 10px #33ccff;
+    }
+
+    .hero-text {
+      padding: 2rem;
+      text-align: left;
+      max-width: 60%;
+    }
+
+    .hero-section {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 4rem 3rem 2rem 3rem;
+      flex-wrap: wrap;
+    }
+
+    .round-button-container {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      padding-bottom: 2rem;
+    }
+
+    .round-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: rgba(0, 255, 255, 0.2);
+      border: 2px solid #33ccff;
+      color: #00ffff;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: transform 0.3s, background 0.3s;
+      text-align: center;
+    }
+
+    .round-button:hover {
+      transform: scale(1.1);
+      background: rgba(0, 255, 255, 0.4);
+      box-shadow: 0 0 15px #33ccff;
+    }
+  </style>
 </head>
 <body>
   <canvas id="canvas"></canvas>
-  <div class="navbar">
-    <a href="index.html">Home</a>
-    <a href="resume.html">Resume</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
-  </div>
-  <div class="content">
-    <h1 class="hero-title">Hi, I am JENNIFER</h1>
-    <p class="subtitle">6 years PM experience, expert in both product design and earning revenue, expert of payment in the worldwide.</p>
-    <div class="grid">
-      <div class="card"><a href="https://www.worldfirst.com/uk/" target="_blank">🌐 WorldFirst Entry Page</a></div>
-      <div class="card"><a href="project1.html">🚀 AIExpress Project</a></div>
-      <div class="card"><a href="project3.html">🎤 UnionPay Launch</a></div>
-      <div class="card"><a href="project4.html">🧩 Other Project</a></div>
+
+  <div class="hero-section">
+    <div class="hero-text">
+      <h1 class="gradient-text" style="font-size: 2.8rem; font-weight: bold;">Hi, I am JENNIFER</h1>
+      <p class="gradient-text" style="font-size: 1.2rem;">
+        6 years PM experience, expert in both product design and earning revenue,<br>
+        expert of payment in the worldwide.
+      </p>
     </div>
+    <img src="avatar.jpg" alt="Jennifer Avatar" class="oval-avatar">
   </div>
+
+  <div class="round-button-container">
+    <a href="resume.html" class="round-button">Resume</a>
+    <a href="projects.html" class="round-button">Projects</a>
+    <a href="contact.html" class="round-button">Contact</a>
+  </div>
+
   <script src="matrix.js"></script>
 </body>
 </html>
-<div class="hero-section">
-  <img src="avatar.jpg" class="oval-avatar" />
-  <div class="hero-text">
-    <h1 class="gradient-text serif-text">Hi, I am JENNIFER</h1>
-    <p class="gradient-text serif-text">6 years PM experience, expert in both product design and earning revenue...</p>
-  </div>
-</div>
-
-<div class="float-card-container">
-  <div class="float-card"><a href="project1.html"><img src="project1.jpg"><p>🚀 AIExpress</p></a></div>
-  <div class="float-card"><a href="project3.html"><img src="project3.jpg"><p>🎤 UnionPay</p></a></div>
-  <div class="float-card"><a href="https://baidu.com" target="_blank"><img src="news_cover.jpg"><p>📰 Car Subsidy</p></a></div>
-</div>
