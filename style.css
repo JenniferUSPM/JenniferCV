@@ -61,3 +61,27 @@ canvas {
   border-radius: 10px;
   text-align: center;
 }
+.star-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  border: 2px solid #33ccff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #00ffff;
+  transition: transform 0.3s ease;
+}
+.star-image:hover {
+  transform: scale(1.05);
+}
