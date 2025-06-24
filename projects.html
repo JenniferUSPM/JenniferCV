@@ -1,28 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Projects</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <canvas id="canvas"></canvas>
+
+  <!-- 顶部导航栏 -->
   <div class="navbar">
-    <a href="index.html">Home</a><a href="resume.html">Resume</a><a href="projects.html">Projects</a><a href="contact.html">Contact</a>
+    <a href="index.html">Home</a>
+    <a href="resume.html">Resume</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
   </div>
-  <div class="content">
-    <h1>Projects</h1>
-    <div class="grid">
-      <div class="card"><a href="https://www.worldfirst.com/uk/" target="_blank">WorldFirst Entry Page</a></div>
-      <div class="card"><a href="project1.html">AIExpress Project</a></div>
-      <div class="card"><a href="project3.html">UnionPay Product Launch</a></div>
-<div class="card">
-  <a href="https://baijiahao.baidu.com/s?id=1700695575772998061&wfr=spider&for=pc&searchword=捷付购车补贴" target="_blank" style="text-decoration: none; color: inherit;">
-    <img src="news_cover.jpg" alt="Car Subsidy News"style="width: 100%"; border-radius: 10px;">
-    <h3 style="margin-top: 0.5rem;">📰 Car Subsidy News Report</h3>
-  </a>
-</div>
-  </div>
+
+  <!-- 项目展示横向排列 -->
+  <section class="projects-row">
+    <div class="project-block">
+      <img src="project1.jpg" alt="Project 1" />
+      <p class="card-title">AIExpress Project</p>
+    </div>
+    <div class="project-block">
+      <img src="project3.jpg" alt="Project 3" />
+      <p class="card-title">UnionPay Launch</p>
+    </div>
+    <div class="project-block">
+      <img src="news_cover.jpg" alt="Media Feature" />
+      <p class="card-title">Media Feature</p>
+    </div>
+    <div class="project-block">
+      <img src="worldfirst_preview.jpg" alt="WorldFirst" />
+      <p class="card-title">WorldFirst Entry</p>
+    </div>
+  </section>
+
   <script src="matrix.js"></script>
 </body>
 </html>
